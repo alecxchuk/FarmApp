@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="array_feed_types">
+        <item>@string/broiler_starter</item>
+        <item>@string/chicks_marsh</item>
+        <item>@string/growers_marsh</item>
+        <item>@string/layers_marsh</item>
+        <item>@string/feed_unknown</item>
+    </string-array>
+
+    <string-array name="array_breed_types">
+        <item>@string/layers</item>
+        <item>@string/broilers</item>
+        <item>@string/turkey</item>
+        <item>@string/cockerel</item>
+        <item>@string/breed_unknown</item>
+    </string-array>
+
+
+</resources>

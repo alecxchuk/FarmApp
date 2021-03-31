@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/feed_item_feedBrand"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:minWidth="72dp"
+        android:padding="8dp"
+        android:text="Feed Brand"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/feed_item_quantity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minWidth="72dp"
+        android:padding="8dp"
+        android:text="Quantity"
+        app:layout_constraintStart_toEndOf="@+id/feed_item_feedType"
+        app:layout_constraintTop_toTopOf="@+id/feed_item_feedType" />
+
+    <TextView
+        android:id="@+id/feed_item_startDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minWidth="72dp"
+        android:padding="8dp"
+        android:text="Start Date"
+        app:layout_constraintStart_toEndOf="@+id/feed_item_quantity"
+        app:layout_constraintTop_toTopOf="@+id/feed_item_feedType" />
+
+    <TextView
+        android:id="@+id/feed_item_endDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minWidth="72dp"
+        android:padding="8dp"
+        android:text="End Date"
+        app:layout_constraintStart_toEndOf="@+id/feed_item_startDate"
+        app:layout_constraintTop_toTopOf="@+id/feed_item_startDate" />
+
+    <TextView
+        android:id="@+id/feed_item_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minWidth="72dp"
+        android:padding="8dp"
+        android:text="Status"
+        app:layout_constraintStart_toEndOf="@+id/feed_item_endDate"
+        app:layout_constraintTop_toTopOf="@+id/feed_item_endDate" />
+
+    <TextView
+        android:id="@+id/feed_item_feedType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minWidth="72dp"
+        android:padding="8dp"
+        android:text="Type"
+        app:layout_constraintStart_toEndOf="@+id/feed_item_feedBrand"
+        app:layout_constraintTop_toTopOf="@+id/feed_item_feedBrand" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

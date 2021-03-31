@@ -1,0 +1,359 @@
+<?xml version="1.0" encoding="utf-8"?><!-- Copyright (C) 2016 The Android Open Source Project
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+          http://www.apache.org/licenses/LICENSE-2.0
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<!-- Layout for the editor -->
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="4dp"
+    android:orientation="vertical"
+    tools:context=".AddNewPen">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Overview category -->
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/addNew_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/linearLa"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/custom_background"
+                android:orientation="horizontal"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:id="@+id/textView32"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                                        android:gravity="center_vertical"
+                    android:paddingTop="8dp"
+                    android:paddingBottom="8dp"
+                    android:text="@string/pen_name"
+                    android:textAllCaps="true"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="@+id/addNew_editText_pen_name"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/addNew_editText_pen_name" />
+
+                <EditText
+                    android:id="@+id/addNew_editText_pen_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="66dp"
+                    android:hint="@string/pen_name"
+                    android:inputType="textPersonName" />
+            </LinearLayout>
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/custom_background"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/linearLa">
+
+                <TextView
+                    android:id="@+id/textView27"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp"
+                    android:paddingTop="8dp"
+                    android:paddingBottom="8dp"
+                    android:text="@string/stock_date"
+                    android:textAllCaps="true"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <!--app:layout_constraintTop_toBottomOf="@+id/addNew_editText_pen_name"-->
+
+                <!-- Breed field -->
+
+                <EditText
+                    android:id="@+id/addNew_editText_breed"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="92dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:drawableEnd="@drawable/ic_baseline_arrow_forward_ios_24"
+                    android:focusableInTouchMode="false"
+                    android:hint="@string/hint_pet_breed"
+                    android:inputType="textCapWords"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/textView18"
+                    app:layout_constraintTop_toBottomOf="@+id/addNew_stock_date" />
+
+                <TextView
+                    android:id="@+id/textView18"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/breed"
+                    android:textAllCaps="true"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="@+id/addNew_editText_breed"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/addNew_editText_breed" />
+
+                <EditText
+                    android:id="@+id/addNew_editText_age"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/age"
+                    android:inputType="number"
+                    app:layout_constraintEnd_toStartOf="@+id/spinner"
+                    app:layout_constraintStart_toStartOf="@+id/addNew_editText_breed"
+                    app:layout_constraintTop_toBottomOf="@+id/addNew_editText_bird_source" />
+
+                <Spinner
+                    android:id="@+id/spinner"
+                    android:layout_width="72dp"
+                    android:layout_height="0dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginBottom="11dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/addNew_editText_age"
+                    app:layout_constraintEnd_toEndOf="parent" />
+
+                <EditText
+                    android:id="@+id/addNew_editText_number"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:focusableInTouchMode="false"
+                    android:hint="@string/number"
+                    android:inputType="number"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="@+id/addNew_editText_age"
+                    app:layout_constraintTop_toBottomOf="@+id/addNew_editText_age" />
+
+                <LinearLayout
+                    android:id="@+id/linearLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:visibility="gone"
+                    tools:layout_editor_absoluteX="146dp"
+                    tools:layout_editor_absoluteY="639dp">
+
+                    <Button
+                        android:id="@+id/button2"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:minWidth="0dp"
+                        android:minHeight="0dp"
+                        android:text="-"
+                        app:layout_constraintStart_toStartOf="@+id/checkBox"
+                        app:layout_constraintTop_toBottomOf="@+id/checkBox" />
+
+                    <TextView
+                        android:id="@+id/textView30"
+                        android:layout_width="8dp"
+                        android:layout_height="38dp"
+                        android:layout_marginStart="8dp"
+                        android:gravity="center_vertical"
+                        android:text="0"
+                        app:layout_constraintBottom_toBottomOf="@+id/button2"
+                        app:layout_constraintStart_toEndOf="@+id/button2"
+                        app:layout_constraintTop_toTopOf="@+id/button2" />
+
+                    <Button
+                        android:id="@+id/button3"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginStart="8dp"
+                        android:minWidth="0dp"
+                        android:minHeight="0dp"
+                        android:text="+"
+                        app:layout_constraintBottom_toBottomOf="@+id/button2"
+                        app:layout_constraintStart_toEndOf="@+id/textView30"
+                        app:layout_constraintTop_toTopOf="@+id/button2" />
+
+
+                </LinearLayout>
+
+
+                <TextView
+                    android:id="@+id/addNew_date_textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:gravity="center_vertical"
+                    android:text="dd/mm/yyyy"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:visibility="gone" />
+
+                <EditText
+                    android:id="@+id/addNew_editText_losses"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Losses"
+                    android:inputType="textPersonName"
+                    android:focusableInTouchMode="false"
+                    android:textColor="#FF0000"
+                    android:textColorHint="#FF0000"
+                    app:layout_constraintEnd_toEndOf="@+id/addNew_editText_number"
+                    app:layout_constraintStart_toStartOf="@+id/addNew_editText_number"
+                    app:layout_constraintTop_toBottomOf="@+id/addNew_editText_number" />
+
+                <TextView
+                    android:id="@+id/addNew_stock_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:drawableStart="@drawable/ic_baseline_date_range_24"
+                    android:paddingTop="8dp"
+                    android:paddingBottom="8dp"
+                    android:text="dd/mm/yyyy"
+                    app:layout_constraintBottom_toBottomOf="@+id/textView27"
+                    app:layout_constraintStart_toStartOf="@+id/addNew_editText_breed"
+                    app:layout_constraintTop_toTopOf="@+id/textView27" />
+
+                <EditText
+                    android:id="@+id/addNew_editText_bird_source"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:ems="10"
+                    android:hint="Bird Source e.g. CHI"
+                    android:inputType="textPersonName"
+                    app:layout_constraintEnd_toEndOf="@+id/addNew_editText_breed"
+                    app:layout_constraintStart_toStartOf="@+id/addNew_editText_breed"
+                    app:layout_constraintTop_toBottomOf="@+id/addNew_editText_breed" />
+
+                <TextView
+                    android:id="@+id/textView29"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/bird_source"
+                    android:textAllCaps="true"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="@+id/addNew_editText_bird_source"
+                    app:layout_constraintStart_toStartOf="@+id/textView18"
+                    app:layout_constraintTop_toTopOf="@+id/addNew_editText_bird_source" />
+
+                <TextView
+                    android:id="@+id/textView43"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/age"
+                    android:textAllCaps="true"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="@+id/addNew_editText_age"
+                    app:layout_constraintStart_toStartOf="@+id/textView29"
+                    app:layout_constraintTop_toTopOf="@+id/addNew_editText_age" />
+
+                <TextView
+                    android:id="@+id/textView45"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/number"
+                    android:textAllCaps="true"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="@+id/addNew_editText_number"
+                    app:layout_constraintStart_toStartOf="@+id/textView43"
+                    app:layout_constraintTop_toTopOf="@+id/addNew_editText_number" />
+
+                <TextView
+                    android:id="@+id/textView46"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/losses"
+                    android:textAllCaps="true"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="@+id/addNew_editText_losses"
+                    app:layout_constraintStart_toStartOf="@+id/textView45"
+                    app:layout_constraintTop_toTopOf="@+id/addNew_editText_losses" />
+
+                <TextView
+                    android:id="@+id/textView48"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/stock"
+                    android:textAllCaps="true"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/custom_background"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/constraintLayout">
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="8dp"
+                    android:text="@string/stock_details"
+                    android:textAllCaps="true"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/stock_details_recycler"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+
+                <!--<Button
+                    android:id="@+id/addNew_add_detail_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:text="Add detail"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/textView" />-->
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <FrameLayout
+            android:id="@+id/addNew_frag_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</ScrollView>

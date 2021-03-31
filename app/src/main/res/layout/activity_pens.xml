@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="8dp"
+    android:orientation="vertical"
+    tools:context=".Pens">
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/pen_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+    <FrameLayout
+        android:id="@+id/fragment_container_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cardview" />
+
+</LinearLayout>

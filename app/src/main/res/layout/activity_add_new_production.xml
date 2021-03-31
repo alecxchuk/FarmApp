@@ -1,0 +1,524 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="8dp"
+    android:paddingBottom="8dp"
+    tools:context=".AddNewProduction">
+
+    <TextView
+        android:id="@+id/change_feed_pen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:paddingTop="8dp"
+        android:paddingEnd="8dp"
+        android:paddingBottom="8dp"
+        android:text="Pen"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/add_prod_pen_selector"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="11dp"
+        android:gravity="center"
+        android:text="Button"
+        app:drawableEndCompat="@drawable/ic_baseline_keyboard_arrow_right_24"
+        app:drawableStartCompat="@drawable/ic_baseline_keyboard_arrow_left_24"
+        app:layout_constraintBottom_toBottomOf="@+id/change_feed_pen"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/add_prod_date"
+        app:layout_constraintTop_toTopOf="@+id/change_feed_pen" />
+
+
+    <TextView
+        android:id="@+id/textView47"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:paddingTop="8dp"
+        android:paddingEnd="8dp"
+        android:paddingBottom="8dp"
+        android:text="@string/date"
+        android:textAllCaps="true"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/change_feed_pen" />
+
+    <TextView
+        android:id="@+id/add_prod_date"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:gravity="center_vertical"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:text="dd/mm/yyyy"
+        app:layout_constraintStart_toStartOf="@+id/add_prod_first_production"
+        app:layout_constraintTop_toTopOf="@+id/textView47" />
+
+    <TextView
+        android:id="@+id/textView49"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:minWidth="155dp"
+        android:paddingTop="8dp"
+        android:paddingEnd="8dp"
+        android:paddingBottom="8dp"
+        android:text="First Production"
+        android:textAllCaps="true"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView47" />
+
+    <TextView
+        android:id="@+id/add_prod_first_production"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="16dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:text="0"
+        android:textSize="14sp"
+        app:drawableEndCompat="@drawable/ic_baseline_keyboard_arrow_right_24"
+        app:layout_constraintBottom_toBottomOf="@+id/textView49"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/textView49"
+        app:layout_constraintTop_toTopOf="@+id/textView49"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/add_prod_first_production_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView49">
+
+
+        <TextView
+            android:id="@+id/textView31"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginStart="8dp"
+            android:gravity="center_vertical"
+            android:minWidth="155dp"
+            android:text="Collected Eggs"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/add_prod_first_prod_collected_eggs"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/add_prod_first_prod_collected_eggs"
+            app:layout_constraintVertical_bias="0.615" />
+
+
+        <EditText
+            android:id="@+id/add_prod_first_prod_collected_eggs"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:ems="10"
+            android:inputType="number"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/textView31"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:hint="Good Eggs"
+            android:paddingTop="8dp"
+            android:paddingEnd="8dp"
+            android:paddingBottom="8dp"
+            android:textSize="16sp"
+            android:textStyle="italic"
+            app:layout_constraintStart_toStartOf="@+id/textView31"
+            app:layout_constraintTop_toBottomOf="@+id/add_prod_first_prod_collected_eggs" />
+
+        <TextView
+            android:id="@+id/add_new_first_prod_good_eggs"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:paddingTop="8dp"
+            android:paddingEnd="8dp"
+            android:paddingBottom="8dp"
+            android:text="0"
+            android:textColor="#145517"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="@+id/textView10"
+            app:layout_constraintStart_toStartOf="@+id/add_prod_first_prod_collected_eggs"
+            app:layout_constraintTop_toTopOf="@+id/textView10" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:hint="Cracked Eggs"
+            android:paddingTop="8dp"
+            android:paddingEnd="8dp"
+            android:paddingBottom="8dp"
+            android:textSize="16sp"
+            android:textStyle="italic"
+            app:layout_constraintStart_toStartOf="@+id/textView10"
+            app:layout_constraintTop_toBottomOf="@+id/textView10" />
+
+        <EditText
+            android:id="@+id/add_prod_first_prod_cracked"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:ems="10"
+            android:inputType="number"
+            android:selectAllOnFocus="true"
+            android:text="0"
+            android:textColor="#F60A0A"
+            app:layout_constraintBottom_toBottomOf="@+id/textView8"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/add_new_first_prod_good_eggs"
+            app:layout_constraintTop_toTopOf="@+id/textView8" />
+
+        <ImageButton
+            android:id="@+id/add_prod_first_prod_saveButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            app:layout_constraintEnd_toEndOf="@+id/add_prod_first_prod_cracked"
+            app:layout_constraintTop_toBottomOf="@+id/add_prod_first_prod_cracked"
+            app:srcCompat="@drawable/ic_baseline_save_24" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/textView51"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:minWidth="155dp"
+        android:paddingTop="8dp"
+        android:paddingEnd="8dp"
+        android:paddingBottom="8dp"
+        android:text="Second Production"
+        android:textAllCaps="true"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/add_prod_first_production_container" />
+
+    <TextView
+        android:id="@+id/add_prod_second_prod"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="16dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:text="0"
+        android:textSize="14sp"
+        app:drawableEndCompat="@drawable/ic_baseline_keyboard_arrow_right_24"
+        app:layout_constraintBottom_toBottomOf="@+id/textView51"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView51"
+        app:layout_constraintTop_toTopOf="@+id/textView51" />
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/add_prod_second_production_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView51">
+
+
+        <TextView
+            android:id="@+id/textView38"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginStart="8dp"
+            android:gravity="center_vertical"
+            android:minWidth="155dp"
+            android:text="Collected Eggs"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/add_prod_second_prod_collected_eggs"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/add_prod_second_prod_collected_eggs" />
+
+        <EditText
+            android:id="@+id/add_prod_second_prod_collected_eggs"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:ems="10"
+            android:inputType="number"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textView38"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView101"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:hint="Good Eggs"
+            android:paddingTop="8dp"
+            android:paddingEnd="8dp"
+            android:paddingBottom="8dp"
+            android:textSize="16sp"
+            android:textStyle="italic"
+            app:layout_constraintStart_toStartOf="@+id/textView38"
+            app:layout_constraintTop_toBottomOf="@+id/add_prod_second_prod_collected_eggs" />
+
+        <TextView
+            android:id="@+id/add_prod_second_prod_good"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:paddingTop="8dp"
+            android:paddingEnd="8dp"
+            android:paddingBottom="8dp"
+            android:text="0"
+            android:textColor="#145517"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="@+id/textView101"
+            app:layout_constraintStart_toStartOf="@+id/add_prod_second_prod_collected_eggs"
+            app:layout_constraintTop_toTopOf="@+id/textView101" />
+
+        <TextView
+            android:id="@+id/textView111"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:hint="Cracked Eggs"
+            android:paddingTop="8dp"
+            android:paddingEnd="8dp"
+            android:paddingBottom="8dp"
+            android:textSize="16sp"
+            android:textStyle="italic"
+            app:layout_constraintStart_toStartOf="@+id/textView101"
+            app:layout_constraintTop_toBottomOf="@+id/textView101" />
+
+        <EditText
+            android:id="@+id/add_prod_second_prod_cracked"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:ems="10"
+            android:inputType="number"
+            android:selectAllOnFocus="true"
+            android:text="0"
+            android:textColor="#F60A0A"
+            app:layout_constraintBottom_toBottomOf="@+id/textView111"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/textView111"
+            app:layout_constraintStart_toStartOf="@+id/add_prod_second_prod_good"
+            app:layout_constraintTop_toTopOf="@+id/textView111" />
+
+        <ImageButton
+            android:id="@+id/add_prod_second_prod_saveButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/add_prod_second_prod_cracked"
+            app:srcCompat="@drawable/ic_baseline_save_24" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+    <TextView
+        android:id="@+id/textView53"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:minWidth="155dp"
+        android:paddingTop="8dp"
+        android:paddingEnd="8dp"
+        android:paddingBottom="8dp"
+        android:text="Third Production"
+        android:textAllCaps="true"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/add_prod_second_production_container" />
+
+    <TextView
+        android:id="@+id/add_prod_third_prod"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="16dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:text="0"
+        android:textSize="14sp"
+        app:drawableEndCompat="@drawable/ic_baseline_keyboard_arrow_right_24"
+        app:layout_constraintBottom_toBottomOf="@+id/textView53"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView53"
+        app:layout_constraintTop_toTopOf="@+id/textView53" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/add_prod_third_production_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textView53">
+
+        <TextView
+            android:id="@+id/textView39"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:gravity="center_vertical"
+            android:minWidth="155dp"
+            android:text="Collected Eggs"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/add_prod_third_prod_collected_eggs"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/add_prod_third_prod_collected_eggs" />
+
+        <EditText
+            android:id="@+id/add_prod_third_prod_collected_eggs"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="16dp"
+            android:ems="10"
+            android:inputType="number"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textView39"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:hint="Good Eggs"
+            android:paddingTop="8dp"
+            android:paddingEnd="8dp"
+            android:paddingBottom="8dp"
+            android:textSize="16sp"
+            android:textStyle="italic"
+            app:layout_constraintStart_toStartOf="@+id/textView39"
+            app:layout_constraintTop_toBottomOf="@+id/add_prod_third_prod_collected_eggs" />
+
+        <TextView
+            android:id="@+id/add_prod_third_prod_good"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:paddingTop="8dp"
+            android:paddingEnd="8dp"
+            android:paddingBottom="8dp"
+            android:text="0"
+            android:textColor="#145517"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="@+id/textView20"
+            app:layout_constraintStart_toStartOf="@+id/add_prod_third_prod_collected_eggs"
+            app:layout_constraintTop_toTopOf="@+id/textView20" />
+
+
+        <TextView
+            android:id="@+id/textView18"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:hint="Cracked Eggs"
+            android:paddingTop="8dp"
+            android:paddingEnd="8dp"
+            android:paddingBottom="8dp"
+            android:textSize="16sp"
+            android:textStyle="italic"
+            app:layout_constraintStart_toStartOf="@+id/textView20"
+            app:layout_constraintTop_toBottomOf="@+id/textView20" />
+
+
+        <EditText
+            android:id="@+id/add_prod_third_prod_cracked"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:ems="10"
+            android:inputType="number"
+            android:selectAllOnFocus="true"
+            android:text="0"
+            android:textColor="#F60A0A"
+            app:layout_constraintBottom_toBottomOf="@+id/textView18"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/add_prod_third_prod_good"
+            app:layout_constraintTop_toTopOf="@+id/textView18" />
+
+        <ImageButton
+            android:id="@+id/add_prod_third_prod_saveButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/add_prod_third_prod_cracked"
+            app:srcCompat="@drawable/ic_baseline_save_24" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <Button
+        android:id="@+id/add_prod_save_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/save"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/add_prod_third_production_container" />
+
+    <Button
+        android:id="@+id/add_prod_cancel_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:text="@string/cancel"
+        app:layout_constraintEnd_toStartOf="@+id/add_prod_save_button"
+        app:layout_constraintTop_toTopOf="@+id/add_prod_save_button" />
+
+    <Button
+        android:id="@+id/add_prod_delete_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:text="@string/delete"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toStartOf="@+id/add_prod_cancel_button"
+        app:layout_constraintTop_toTopOf="@+id/add_prod_cancel_button" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

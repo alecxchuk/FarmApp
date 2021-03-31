@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.home.HomeFragment">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:clickable="true"
+        android:focusable="true"
+        app:cardCornerRadius="4dp"
+        app:cardElevation="16dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/home_egg_production_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp">
+
+            <ImageView
+                android:id="@+id/production_image"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:src="@drawable/ic_menu_gallery"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/home_egg_production"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_toEndOf="@id/production_image"
+                android:padding="8dp"
+                android:text="@string/egg_production"
+                android:textStyle="bold"
+                app:layout_constraintStart_toEndOf="@id/production_image"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/home_today"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/home_egg_production"
+                android:layout_toEndOf="@id/production_image"
+                android:padding="8dp"
+                android:text="Today:"
+                app:layout_constraintStart_toStartOf="@id/home_egg_production"
+                app:layout_constraintTop_toBottomOf="@id/home_egg_production" />
+
+            <TextView
+                android:id="@+id/home_weekly_production"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/home_today"
+                android:layout_toEndOf="@id/production_image"
+                android:padding="8dp"
+                android:text="Week:"
+                app:layout_constraintStart_toStartOf="@+id/home_today"
+                app:layout_constraintTop_toBottomOf="@id/home_today" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/home_today"
+                android:layout_toEndOf="@id/home_weekly_production"
+                android:padding="8dp"
+                android:text="Month:"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@id/home_weekly_production"
+                app:layout_constraintTop_toTopOf="@id/home_weekly_production" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:clickable="true"
+        android:focusable="true"
+        app:cardCornerRadius="4dp"
+        app:cardElevation="16dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/home_feeding_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp">
+
+            <ImageView
+                android:id="@+id/home_feeding_image"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:src="@drawable/ic_menu_gallery"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/home_feed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:padding="8dp"
+                android:text="Feeding"
+                android:textStyle="bold"
+                app:layout_constraintStart_toEndOf="@id/home_feeding_image"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/home_feed_today"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="Today:"
+                app:layout_constraintStart_toStartOf="@id/home_feed"
+                app:layout_constraintTop_toBottomOf="@id/home_feed" />
+
+            <TextView
+                android:id="@+id/home_feed_weekly_production"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="Week:"
+                app:layout_constraintStart_toStartOf="@+id/home_feed_today"
+                app:layout_constraintTop_toBottomOf="@id/home_feed_today" />
+
+            <TextView
+                android:id="@+id/home_feed_month"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="Month:"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@id/home_feed_weekly_production"
+                app:layout_constraintTop_toTopOf="@id/home_feed_weekly_production" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:clickable="true"
+        android:focusable="true"
+        app:cardCornerRadius="4dp"
+        app:cardElevation="16dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/home_pen_management_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp">
+
+            <ImageView
+                android:id="@+id/home_pen_image"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:src="@drawable/ic_menu_gallery"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/home_pen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:padding="8dp"
+                android:text="Pen Management"
+                android:textStyle="bold"
+                app:layout_constraintStart_toEndOf="@id/home_pen_image"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/home_pen_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="Total Pens:"
+                app:layout_constraintStart_toStartOf="@+id/home_pen"
+                app:layout_constraintTop_toBottomOf="@id/home_pen" />
+
+            <TextView
+                android:id="@+id/home_pen_breed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="Today:"
+                app:layout_constraintStart_toStartOf="@id/home_pen_number"
+                app:layout_constraintTop_toBottomOf="@id/home_pen_number" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

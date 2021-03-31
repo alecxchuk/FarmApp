@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/number_dialog"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/textView33"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:text="Chicks"
+        android:textAllCaps="true"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/number_dialog_chicks"
+        app:layout_constraintStart_toStartOf="@+id/textView42"
+        app:layout_constraintTop_toTopOf="@+id/number_dialog_chicks" />
+
+    <TextView
+        android:id="@+id/textView40"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:text="Hens"
+        android:textAllCaps="true"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/number_dialog_hens"
+        app:layout_constraintStart_toStartOf="@+id/textView33"
+        app:layout_constraintTop_toTopOf="@+id/number_dialog_hens" />
+
+    <TextView
+        android:id="@+id/textView41"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Cocks"
+        android:textAllCaps="true"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/number_dialog_cocks"
+        app:layout_constraintStart_toStartOf="@+id/textView40"
+        app:layout_constraintTop_toTopOf="@+id/number_dialog_cocks" />
+
+    <EditText
+        android:id="@+id/number_dialog_chicks"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:digits="0123456789"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/add_detail_breed_spinner" />
+
+    <EditText
+        android:id="@+id/number_dialog_hens"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:digits="0123456789"
+        android:inputType="number"
+        app:layout_constraintStart_toStartOf="@+id/number_dialog_chicks"
+        app:layout_constraintTop_toBottomOf="@+id/number_dialog_chicks" />
+
+    <EditText
+        android:id="@+id/number_dialog_cocks"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:inputType="number"
+        android:digits="0123456789"
+        app:layout_constraintStart_toStartOf="@+id/number_dialog_hens"
+        app:layout_constraintTop_toBottomOf="@+id/number_dialog_hens" />
+
+    <TextView
+        android:id="@+id/textView42"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Breed"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/textView44"
+        app:layout_constraintTop_toBottomOf="@+id/textView50" />
+
+
+    <TextView
+        android:id="@+id/textView44"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Date"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/number_dialog_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="15-11-2020"
+        app:layout_constraintBottom_toBottomOf="@+id/textView44"
+        app:layout_constraintStart_toStartOf="@+id/add_detail_breed_spinner"
+        app:layout_constraintTop_toTopOf="@+id/textView44" />
+
+    <Spinner
+        android:id="@+id/add_detail_breed_spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@+id/number_dialog_chicks"
+        app:layout_constraintTop_toTopOf="@+id/textView42" />
+
+    <TextView
+        android:id="@+id/textView50"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Type"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/textView44"
+        app:layout_constraintTop_toBottomOf="@+id/textView44" />
+
+    <Spinner
+        android:id="@+id/add_detail_input_type_spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@+id/number_dialog_date"
+        app:layout_constraintTop_toTopOf="@+id/textView50" />
+</androidx.constraintlayout.widget.ConstraintLayout>

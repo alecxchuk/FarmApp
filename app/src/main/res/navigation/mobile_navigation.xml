@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="android.example.farmer.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_pen"
+        android:name="android.example.farmer.ui.pen.PenFragment"
+        android:label="@string/pen"
+        tools:layout="@layout/fragment_pen" />
+
+    <fragment
+        android:id="@+id/nav_production"
+        android:name="android.example.farmer.ui.production.ProductionFragment"
+        android:label="@string/production"
+        tools:layout="@layout/fragment_productions" />
+    <fragment
+        android:id="@+id/nav_sales"
+        android:name="android.example.farmer.ui.sales.SalesFragment"
+        android:label="@string/sales"
+        tools:layout="@layout/fragment_pen" />
+    <fragment
+        android:id="@+id/nav_medication"
+        android:name="android.example.farmer.ui.sales.SalesFragment"
+        android:label="@string/medication"
+        tools:layout="@layout/fragment_pen" />
+    <fragment
+        android:id="@+id/nav_statistics"
+        android:name="android.example.farmer.ui.statistics.StatisticsFragment"
+        android:label="@string/statistics"
+        tools:layout="@layout/statistics_fragment" />
+</navigation>

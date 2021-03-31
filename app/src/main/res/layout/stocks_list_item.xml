@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/cardview_shadow_start_color"
+    android:layout_marginTop="4dp"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/stock_date"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/stock_breed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:minWidth="60dp"
+        android:text="TextView" />
+
+
+    <TextView
+        android:id="@+id/stock_chicks"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:minWidth="60dp"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/stock_hens"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:minWidth="60dp"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/stock_cocks"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:minWidth="60dp"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/stock_type"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="TextView" />
+
+
+</LinearLayout>

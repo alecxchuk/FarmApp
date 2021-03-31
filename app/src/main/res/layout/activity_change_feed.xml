@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout3"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ChangeFeed">
+
+    <TextView
+        android:id="@+id/change_feed_pen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:paddingTop="8dp"
+        android:paddingEnd="8dp"
+        android:paddingBottom="8dp"
+        android:text="PEN"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <CheckBox
+        android:id="@+id/change_checkBox"
+        android:layout_width="wrap_content"
+        android:layout_height="24dp"
+        android:text="Custom"
+        app:layout_constraintBottom_toBottomOf="@+id/textView67"
+        app:layout_constraintStart_toEndOf="@+id/change_feed_type"
+        app:layout_constraintTop_toTopOf="@+id/textView67" />
+
+    <Spinner
+        android:id="@+id/change_feed_type"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+
+        android:spinnerMode="dropdown"
+        app:layout_constraintBottom_toBottomOf="@+id/textView67"
+        app:layout_constraintStart_toStartOf="@+id/change_feed_quantity"
+        app:layout_constraintTop_toTopOf="@+id/textView67" />
+
+    <TextView
+        android:id="@+id/textView67"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:text="Feed Type"
+        android:textAllCaps="true"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/change_feed_name" />
+
+    <TextView
+        android:id="@+id/textView54"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:gravity="center_vertical"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:text="FEED BRAND"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/change_feed_name"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/change_feed_name" />
+
+    <EditText
+        android:id="@+id/change_feed_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:hint="Feed Name"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/change_feed_feed_date"
+        app:layout_constraintStart_toStartOf="@+id/change_feed_type"
+        app:layout_constraintTop_toBottomOf="@+id/change_feed_feed_date" />
+
+    <TextView
+        android:id="@+id/textView71"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:gravity="center_vertical"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:text="quantity (kgs)"
+        android:textAllCaps="true"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/change_feed_quantity"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/change_feed_quantity" />
+
+    <EditText
+        android:id="@+id/change_custom_feedType"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:ems="10"
+        android:hint="Feed Type"
+        android:inputType="textPersonName"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/change_feed_type"
+        app:layout_constraintTop_toBottomOf="@+id/change_feed_type" />
+
+    <TextView
+        android:id="@+id/change_feed_pen_selector"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="8dp"
+        android:gravity="center"
+        android:text="Button"
+        app:drawableEndCompat="@drawable/ic_baseline_keyboard_arrow_right_24"
+        app:drawableStartCompat="@drawable/ic_baseline_keyboard_arrow_left_24"
+        app:layout_constraintBottom_toBottomOf="@+id/change_feed_pen"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/change_feed_feed_date"
+        app:layout_constraintTop_toTopOf="@id/change_feed_pen" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:text="@string/date"
+        android:textAllCaps="true"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/change_feed_pen"
+        app:layout_constraintTop_toBottomOf="@+id/change_feed_pen" />
+
+    <TextView
+        android:id="@+id/change_feed_feed_date"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="8dp"
+        android:gravity="center_vertical"
+        android:text="dd/mm/yyyy"
+        app:drawableStartCompat="@drawable/ic_baseline_date_range_24"
+        app:layout_constraintBottom_toBottomOf="@+id/textView6"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/change_feed_type"
+        app:layout_constraintTop_toTopOf="@+id/textView6" />
+
+
+    <EditText
+        android:id="@+id/change_feed_quantity"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="8dp"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView71"
+        app:layout_constraintTop_toBottomOf="@+id/textView67" />
+
+    <Button
+        android:id="@+id/change_feed_main_save_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/save"
+        app:layout_constraintEnd_toEndOf="@+id/change_feed_quantity"
+        app:layout_constraintTop_toBottomOf="@+id/change_feed_quantity" />
+
+    <Button
+        android:id="@+id/change_feed_main_cancel_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:text="@string/cancel"
+        app:layout_constraintEnd_toStartOf="@+id/change_feed_main_save_button"
+        app:layout_constraintTop_toTopOf="@+id/change_feed_main_save_button" />
+
+    <Button
+        android:id="@+id/change_feed_main_delete_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/delete"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toStartOf="@+id/change_feed_main_cancel_button"
+        app:layout_constraintTop_toTopOf="@+id/change_feed_main_cancel_button" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
